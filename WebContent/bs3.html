@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+	.f1{
+		height: 100px;
+		background-color: red;
+	}
+	.f2{
+		height: 100px;
+		background-color: blue;
+	}
+	@media (max-width:768px) {
+		.f2 {
+			/*visibility: hidden; - 공간은 차지*/
+			display: none;
+		}	
+		
+	}
+	@media (min-width:768px) and (max-width:992px) {
+
+		
+	}
+
+</style>
+
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-xs-offset-0 col-lg-4 col-lg-offset-3 f1"></div>
+			<div class="col-lg-2 f2"></div>
+	
+		</div>
+	</div>
+</body>
+</html>
